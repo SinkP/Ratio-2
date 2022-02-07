@@ -387,18 +387,22 @@ img {
 
 .testimonials {
   padding: 0px 0px 150px 0px;
+  position: relative;
+
 }
 
 .testimonials__inner {
   background: #9C69E2;
   border-radius: 50px;
+  margin: 0 auto;
+
 }
 
 .testimonials__body {
   max-width: 930px;
-  margin: 0 auto;
   padding: 109px 0px 0px 0px;
   position: relative;
+  margin: 0 auto;
 }
 
 .testimonials__title {
@@ -406,28 +410,47 @@ img {
   font-size: 40px;
   line-height: 130%;
   color: #FFFFFF;
+
+  padding: 0px 0px 41.5% 0px;
 }
 
 .testimonials__slider {
-  /* Жду указаний по поводу слайдера, по-этому на данном этапе не реализиую никак ячейки со сладами.*/
-  overflow: visible;
+  position: absolute;
+  top: 25%;
+  left: 30.5%;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+
+  /* адаптив остальной верстки немного едет из-за того, что слайдер не завершен */
 }
 
 .slider__items {
-  max-width: 645px;
+  max-width: 400px;
   max-height: 330px;
   background: #FFFFFF;
-  box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
-  border-radius: 20px;
-  border-radius: 20px;
   display: flex;
   align-items: center;
   z-index: 50;
+  margin: 0px 20px 0px 0px;
+  background: #FFFFFF;
+  border: 1px solid #9C69E2;
+  -webkit-box-shadow: 0px 20px 0px 0px rgba(138, 86, 219, 0.2);
+  -moz-box-shadow: 0px 20px 0px 0px rgba(138, 86, 219, 0.2);
+  box-shadow: 0px 20px 0px 0px rgba(138, 86, 219, 0.2);
+  border-radius: 20px;
+}
+
+.active {
+  max-width: 645px;
+  max-height: 330px;
+
 }
 
 .slider__body {
   display: flex;
-  padding: 0px 70px;
+  padding: 55px 70px;
 }
 
 .slider__image {
