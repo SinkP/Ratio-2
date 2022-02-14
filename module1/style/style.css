@@ -128,7 +128,7 @@ img {
   margin: 0 auto;
   position: relative;
 
-  background: url(/img/content/image1\ 1.svg) no-repeat;
+  background: url(./img/content/image1\ 1.svg) no-repeat;
   background-position: right bottom;
 }
 
@@ -194,6 +194,7 @@ img {
   font-weight: bold;
   line-height: 110%;
   color: #212353;
+  /* TODO: Не очень хорошо */
   font-size: calc(80px + 10 * (100vw / 1920));
   padding: 0px 0px 50px 0px;
 }
@@ -290,6 +291,7 @@ img {
   padding: 0px 0px 100px 0px;
 }
 .title {
+  /* TODO: Не очень хорошо */
   font-size: calc(40px + 14 * (100vw / 1280));
   line-height: 130%;
   font-weight: bold;
@@ -487,6 +489,7 @@ img {
 }
 
 .slider__dots {
+  /* TODO: Не очень хорошо, этих точек по логике может быть 1, а может быть 100 штук, а у тебя фиксированная ширина */
   width: 55px;
   height: 10px;
 
